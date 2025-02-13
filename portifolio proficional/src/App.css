@@ -1,0 +1,65 @@
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: 
+        "nav box box sidebar"
+        "nav box box sidebar"
+        "nav box box sidebar"
+        "nav box box sidebar";
+    grid-gap: 1rem;
+    
+    max-width: 1080px; 
+    max-height: 720px;
+    flex-direction: reverow;
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    background-color: rgb(255, 0, 0);
+    grid-area: nav;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding: 10px;
+    min-height: 400px;
+}
+
+.box {
+    display: flex;
+    background-color: rgb(0, 136, 255);
+    grid-area: box;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    min-height: 720px;
+    min-width: 800px;
+}
+
+.sidebar {
+    display: flex;
+    background-color: aqua;
+    grid-area: sidebar;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    min-height: 720px;
+    min-width: 200px;
+}

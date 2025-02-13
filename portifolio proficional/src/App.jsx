@@ -1,14 +1,19 @@
-import { useState } from 'react';
 import './App.css';
 import Sobre from './sobre';
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
-    <div>
-      <h1>Bem-vindo ao meu site!</h1>
-      <Sobre />
+    <div className='container'>
+      <div className="nav">
+        <h1>nav</h1>
+      </div>
+      <div className="box">
+        <Sobre />
+      </div>
+      <div className="sidebar">
+        <h1>sidebar</h1>
+      </div>
     </div>
   );
 }
