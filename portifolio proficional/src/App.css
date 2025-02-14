@@ -9,57 +9,55 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: #222; /* Apenas para visualizar melhor */
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    display: grid; /* 🔹 Usa apenas grid */
+    grid-template-columns: 1fr 3fr 3fr 3fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-        "nav box box sidebar"
-        "nav box box sidebar"
-        "nav box box sidebar"
-        "nav box box sidebar";
+        "nav box box box sidebar"
+        "nav box box box sidebar"
+        "nav box box box sidebar"
+        "nav box box box sidebar";
     grid-gap: 1rem;
     
-    max-width: 1080px; 
-    max-height: 720px;
-    flex-direction: reverow;
-    display: flex;
-    align-items: center;
+    width: 100%; /* 🔹 Permite que o grid se ajuste */
+    min-width: 1080px;
 }
 
 .nav {
     display: flex;
-    background-color: rgba(255, 255, 255, 0.100);
+    background-color: rgba(255, 255, 255, 0.1);
     grid-area: nav;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
     padding: 10px;
-    min-height: 400px;
+    margin: 10rem 0rem 10rem 0rem;
+    max-width: 50px;
 }
 
 .box {
     display: flex;
-    background-color: rgba(255, 255, 255, 0.100);
+    background-color: rgba(255, 255, 255, 0.1);
     grid-area: box;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     padding: 10px;
     min-height: 720px;
-    min-width: 800px;
 }
 
 .sidebar {
     display: flex;
-    background-color: rgba(255, 255, 255, 0.100);
+    background-color: rgba(255, 255, 255, 0.1);
     grid-area: sidebar;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     padding: 10px;
     min-height: 720px;
-    min-width: 200px;
+    width: 100%;
 }
