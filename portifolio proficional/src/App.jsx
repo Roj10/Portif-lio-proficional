@@ -1,5 +1,6 @@
 import './App.css';
 import Sobre from './sobre';
+import Projetos from './projetos';
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       </div>
       <div className="box">
         <Sobre />
+        <Projetos />
       </div>
       <div className="sidebar">
         <h1>sidebar</h1>

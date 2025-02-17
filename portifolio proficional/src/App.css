@@ -48,6 +48,7 @@ body {
     border-radius: 20px;
     padding: 10px;
     height: 720px;
+    width: 1080;
 }
 
 .sidebar {
@@ -69,4 +70,5 @@ body {
     min-height: 300px;
     min-width: 300px;
     border-radius: 20px;
+    margin: .5rem;
 }
