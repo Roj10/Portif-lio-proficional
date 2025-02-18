@@ -37,6 +37,7 @@ body {
     padding: 10px;
     margin: 10rem 0rem 10rem 0rem;
     max-width: 60px;
+    
 }
 
 .box {
@@ -65,6 +66,15 @@ body {
 }
 
 .sobre {
+    text-align: center;
+    background-color: rgb(94, 94, 94);
+    min-height: 300px;
+    min-width: 300px;
+    border-radius: 20px;
+    margin: .5rem;
+}
+
+.Projetos {
     text-align: center;
     background-color: rgb(94, 94, 94);
     min-height: 300px;
