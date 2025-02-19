@@ -54,6 +54,7 @@ i {
 
 i:hover {
     background-color: #222;
+    transform: translateY(-5px);
 }
 
 .box {
