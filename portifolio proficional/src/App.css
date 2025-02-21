@@ -85,8 +85,7 @@ i:hover {
     
     width: 100%;
     max-width: 1380px;
-    height: auto;
-    padding: 1rem;  
+    height: auto;  
     min-height: 720px;
     .nav {
         margin: 10rem 0rem 10rem 0rem;
