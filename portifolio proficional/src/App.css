@@ -123,15 +123,21 @@ i:hover {
             .nav {
                 flex-direction: row;
                 min-width: 100%;
-                margin: 5rem 0rem 0rem 0rem;
+                margin: 0rem 0rem 0rem 0rem;
+                max-width: 768px;
+                position: sticky;
+                top: 20px;
+                background-color: rgb(94, 94, 94);
             }
             .box {
                 flex-direction: column;
-                width: 100%;
+                min-width: 100%;
+                max-width: 768px;
             }
         
             .sidebar {
-                width: 100%;
+                min-width: 100%;
+                max-width: 768px;
             }
     }
 
