@@ -95,28 +95,61 @@ i:hover {
 
 @media (max-width: 1024px) {
     .container {
+        display: grid;
         grid-template-columns: 1fr 4fr;
         grid-template-areas: 
             "nav box"
             "nav box"
             "sidebar box";
+        gap: 1rem;
+        width: 100%;
+        padding-top: 70px; /* Para evitar sobreposição com a nav fixa */
     }
 
     .nav {
-        flex-direction: row;
-                min-width: 100%;
-                margin: 0rem 0rem 0rem 0rem;
-                max-width: 768px;
-                position: sticky;
-                top: 20px;
-                background-color: rgb(94, 94, 94);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px; /* Definir altura fixa */
+        background-color: rgb(94, 94, 94);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1000;
+        padding: 10px 0;
+    }
+
+    .nav i {
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px; /* Centraliza ícone */
+        transition: 0.3s;
+    }
+
+    .nav i:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: scale(1.1);
     }
 
     .sidebar {
-        min-width: 100%;
-        max-width: 768px;
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .box {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 }
+
 
 @media (max-width: 768px) {
     .container {
